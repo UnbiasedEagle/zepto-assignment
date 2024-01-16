@@ -1,8 +1,8 @@
-# Auto-suggest and Chip Selection React Component
+# Auto-suggest and Chip Selection using React
 
 ## Objective
 
-Implemented a React component that enhances user input experience by providing auto-suggest functionality and chip selection. This component allows users to easily select items from a list, converting them into chips with removal options. Additionally, the auto-suggest list dynamically update based on user input.
+Implement a React component that enhances user input experience by providing auto-suggest functionality and chip selection. This component allows users to easily select items from a list, converting them into chips with removal options. Additionally, the auto-suggest list dynamically update based on user input.
 
 ## Features
 
@@ -26,3 +26,5 @@ Implemented a React component that enhances user input experience by providing a
 
 - When the input is blank, pressing the backspace key highlight the last chip.
 - Pressing backspace again removes the highlighted chip.
+
+[Deployed URL](https://chip-saurabh-singh.vercel.app/ 'Chip Selection')
