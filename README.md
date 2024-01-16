@@ -27,4 +27,4 @@ Implement a React component that enhances user input experience by providing aut
 - When the input is blank, pressing the backspace key highlight the last chip.
 - Pressing backspace again removes the highlighted chip.
 
-[Deployed URL](https://chip-saurabh-singh.vercel.app/ 'Chip Selection')
+[App URL](https://chip-saurabh-singh.vercel.app/ 'Chip Selection')
