@@ -23,7 +23,7 @@ const Homepage = () => {
   };
 
   const removeOrHighlightLastUser = useCallback(() => {
-    const copySelectedUsers = [...selectedUsers];
+    let copySelectedUsers = [...selectedUsers];
 
     const selectedUsersCount = copySelectedUsers.length;
 
@@ -36,6 +36,11 @@ const Homepage = () => {
     } else {
       copySelectedUsers.pop();
     }
+
+    copySelectedUsers = copySelectedUsers.map((user, idx) => {
+      if (idx === copySelectedUsers.length - 1) return { ...user };
+      return { ...user, highlighted: false };
+    });
 
     setSelectedUsers(copySelectedUsers);
   }, [selectedUsers]);
