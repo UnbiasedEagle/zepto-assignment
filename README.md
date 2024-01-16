@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Auto-suggest and Chip Selection React Component
 
-## Getting Started
+## Objective
 
-First, run the development server:
+Implement a React component that enhances user input experience by providing auto-suggest functionality and chip selection. This component should allow users to easily select items from a list, converting them into chips with removal options. Additionally, the auto-suggest list should dynamically update based on user input.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Auto-suggest List
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Clicking on the input field will reveal a list of items.
+- The list dynamically filters as the user types, displaying only items that match the input.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Chips
 
-## Learn More
+- Clicking on an item in the list will convert it into a chip displayed at the top of the input field.
+- The input field will adjust automatically to accommodate the selected chips.
+- Once an item becomes a chip, it should be removed from the list.
 
-To learn more about Next.js, take a look at the following resources:
+### Chip Removal
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Each chip will include an "X" icon for removal.
+- Clicking the "X" icon associated with a chip should remove that chip and add the item back to the list.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Backspace Handling
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- When the input is blank, pressing the backspace key should highlight the last chip.
+- Pressing backspace again should remove the highlighted chip.
